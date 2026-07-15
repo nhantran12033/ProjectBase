@@ -5,6 +5,7 @@ export const appRoutes: Routes = [
     path: '',
     pathMatch: 'full',
     loadChildren: () => import('./home/home.routes').then(m => m.homeRoutes),
+
   },
   {
     path: 'account',
@@ -23,5 +24,8 @@ export const appRoutes: Routes = [
     path: 'setting-management',
     loadChildren: () =>
       import('@abp/ng.setting-management').then(m => m.createRoutes()),
+  },
+  {
+  path : 'books', loadComponent: () => import('./book/book.component').then(c => c.BookComponent) 
   },
 ];

@@ -1,8 +1,12 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
+  "Price":"Price",
+  "::Price":"Price",
   "compileOnSave": false,
-  "compilerOptions": {
+ "compilerOptions": {
     "baseUrl": "./",
+    "rootDir": "./src",
+    "ignoreDeprecations": "6.0",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -26,8 +30,5 @@
       ]
     },
     "useDefineForClassFields": false
-  },
-  "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false
-  }
+},
 }
